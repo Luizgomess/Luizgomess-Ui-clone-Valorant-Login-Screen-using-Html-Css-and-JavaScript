@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <title>Valorant | Login</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="valorant-form">
+
+            <img src="image/valorantLogo.png" class="valorant-logo">
+            <div class="quest-btn">
+                <p>?</p>
+            </div>
+
+            <h1>Fazer login</h1>
+            <div class="valorant-input-box">
+                <input type="text" required class="login" id="usuario">
+                <p class="label userLogin">NOME DE USUÁRIO</p>
+                <br>
+
+                <input type="password" required class="key" id="senha">
+                <p class="label1 userkey">SENHA</p>
+                <div class="show-password fas fa-eye-slash"></div>
+            </div>
+            <div class="social">
+                <div class="facebook media"><i class="fab fa-facebook"></i></div>
+                <div class="google media"><i class="fab fa-google"></i></div>
+                <div class="apple media"><i class="fab fa-apple"></i></div>
+            </div>
+            <br>
+            <input type="checkbox" id="checkbox-login" class="checkbox-login">
+            <label for="checkbox-login">Manter login</label><br>
+            <button disabled class="btn-login">🡢</button>
+            <article>
+                <a href="#" target="_blank" class="footer-links">NÃO CONSEGUE INICIAR SESSÃO?</a><br>
+                <a href="#" target="_blank" class="footer-links">CRIAR CONTA</a>
+                <p href="#" target="_blank" class="footer-links">V2.0.0</p>
+            </article>
+
+        </div>
+        <div class="valorant-image">
+            <article class="img-btn">
+                <div class="top-btn">
+                    <ul>
+                        <li>_</li>
+                        <li>?</li>
+                        <li class="exit">X</li>
+                    </ul>
+                </div>
+
+                <div class="config-btn">
+                    <button id="config"><i class="fas fa-cog"></i></button>
+                </div>
+            </article>
+        </div>
+        <div id="modal" class="invisible">
+            <div class="configuracoes">
+                <div class="config-container2">
+                    <img src="image/valorantLogo.png" class="valorant-logo-config">
+                    <div class="config2-footer">
+                        <span class="nome-clarinho">TERCEIROS</span>
+                        <span class="nome-versao">V2.0.0</span>
+                    </div>
+                </div>
+                <div class="config-container">
+                    <h2>CONFIGURAÇÕES</h2>
+                    <div class="select">
+                        <span class="sub-titulo">PATHLINE ATUAL</span>
+                        <div class="select-box">
+                            <p class="option">LIVE</p>
+                            <i id="arrow" class="fas fa-caret-down"></i>
+                        </div>
+                        <div id="options-list" class="options-list">
+                            <p class="option-element">LIVE</p>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <span class="sub-titulo">IDOMA DO JOGO</span>
+                        <div class="select-box language-box">
+                            <p class="option">Português</p>
+                            <i id="arrow1" class="fas fa-caret-down"></i>
+                        </div>
+                        <div id="#lang-lista" class="options-list">
+                            <p class="option-element">Português</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fechar-config">
+                <button id="close-btn">&#10005;</button>
+            </div>
+
+        </div>
+
+        <div class="jogar" id="jogar">
+            <p>vamo jogar</p>
+        </div>
+
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

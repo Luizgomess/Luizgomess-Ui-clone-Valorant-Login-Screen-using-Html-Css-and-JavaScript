@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo Black', sans-serif;
+    box-sizing: border-box;
+}   
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.valorant-form {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100vh;
+}
+
+.valorant-form .valorant-logo {
+    width: 50px;
+    height: 40px;
+    margin: 50px 50px 50px 50px;
+}
+/*=============== ? ============*/
+.valorant-form .quest-btn {
+    float: right;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: #b4b4b4;
+    border-radius: 50%;
+    font-size: 10pt;
+    font-family: Roboto, sans-serif;
+    color: white;
+    margin-left: 300px;
+    margin-top: -100px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+/*=========== input =============*/
+
+.valorant-form h1 {
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+}
+
+.valorant-input-box {
+    margin-top: 40px;
+    position: relative;
+}
+
+.valorant-input-box input {
+    width: 330px;
+    height: 50px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    transition: linear 0.1s;
+    text-indent: 0.3rem;
+    color: #333230;
+}
+
+.valorant-input-box input:hover {
+    background-color: #dedede;
+}
+
+.valorant-input-box input:focus {
+    border: 2px solid #333230;
+    background-color: #dedede;
+}
+
+.userLogin {
+    font-family: 'Archivo Black', sans-serif;
+    color: #afa7a5;
+    font-size: 11px;
+    top: 20px;
+    left: 10px;
+}
+
+.userkey {
+    font-family: 'Archivo Black', sans-serif;
+    color: #afa7a5;
+    font-size: 11px;
+    top: 78px;
+    left: 10px;
+}
+
+.label {
+    position: absolute;
+	pointer-events: none;
+	transition: 0.2s ease all;
+}
+
+.label1 {
+    position: absolute;
+	pointer-events: none;
+	transition: 0.2s ease all;
+}
+
+.valorant-input-box .login:focus ~ .label,.valorant-input-box .login:not(:focus):valid ~ .label {
+    left: 7px;
+    top: 5px;
+	font-size: 9px;
+}
+
+.valorant-input-box .key:focus ~ .label1,.valorant-input-box .key:not(:focus):valid ~ .label1 {
+    left: 5px;
+    top: 65px;
+	font-size: 9px;
+}
+
+.show-password {
+    position: absolute;
+    right: 20px;
+    bottom: 2px;
+    line-height: 70px;
+    color: #9d9d9d;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/*=================Checkbox=================================*/
+.checkbox-login {
+    display: none;
+  }
+  
+.checkbox-login + label:before {
+    content: '';
+    width: 17px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: #ececec;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+    margin-left: -20px;
+  }
+  
+.checkbox-login:checked + label:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #d13739;
+    background-position: center;
+    border: none;
+    padding: 1px;
+  }
+
+.valorant-form label {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 10pt;
+    color: #afa7a5;
+    margin-left: -150px;
+    cursor: pointer;
+    transition: linear 0.2s;
+}    
+
+.valorant-form label:hover {
+    color: #c0cbd8;
+}
+
+/*==========BUTTON==================*/
+.valorant-form .btn-login {
+    background-color: #d13739;
+    color: #ffffff;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 20pt;
+    transition: linear 0.1s;
+    cursor: pointer;
+}
+
+.valorant-form .btn-login:hover {
+    background-color: #bb2a2d;
+}
+
+.valorant-form .btn-login:disabled {
+    background-color: transparent;
+    color: #ddd;
+    border: 2px solid;
+}
+
+
+/* ==================== ACCOUNT LINKS ================*/
+.valorant-form article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.valorant-form article a {
+    font-size: 8pt;
+    color: #afb2b9;
+    font-family: 'Archivo Black', sans-serif;
+    text-decoration: none;
+    transition: linear 0.1s;
+    text-align: center;
+    line-height: 15px;
+    align-self: center;
+}
+
+.valorant-form article a:hover{
+    color: #111111;
+}
+
+.valorant-form article p {
+    font-size: 8pt;
+    font-family: 'Archivo Black', sans-serif;
+    color: #afb2b9;
+    margin-left: 250px;
+    margin-top: 14px;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+.valorant-form article p:hover {
+    color: #85807f;
+}
+
+/* =================== image ==================== */
+
+.valorant-image {
+    min-width: 70%;
+    height: 100%;
+    background-image: url("image/valorantLogin.jpg");
+    background-size: 100% 130%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* =================== X ? _ ==================== */
+
+ .img-btn ul {
+    list-style: none;
+    margin-top: 10px;
+    text-align: center;
+    float: right;
+}
+
+.img-btn ul li {
+    display: inline;
+    padding: 15px;
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+    color: #808080;
+    transition: 0.1s linear;
+}
+
+.img-btn ul li:hover {
+    background:rgba(255,255,255, 0.3);
+   
+}
+
+.img-btn ul .exit:hover {
+    background-color: #d13739;
+    color: #ffffff;
+}
+
+/* ================== social medias =============== */
+
+.social {
+    display: flex;
+    width: 67%;
+    height: 50px;
+    background-color: transparent;
+}
+
+.social .media {
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    width: 30%;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.social .facebook {
+    background: #1878f3;
+}
+
+.social .google {
+    background-color: #ffffff;
+    border: 1px solid #808080;
+    color: black;
+}
+
+/* ================== settings button =============== */
+
+.img-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-btn button {
+    width: 40px;
+    height: 40px;
+    border-radius:7px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #7e7a7b;
+    color: #e6e6e6;
+    text-align: center;
+    font-size: 17px;
+    transition: linear 0.2s;
+    margin: 10px 0px 50px 60px;
+}
+
+.img-btn button:hover {
+    background-color: rgb(190, 179, 182);
+}
+
+/* ================== modal config =============== */
+
+#modal {
+    display: flex;
+}
+
+.invisible  {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.configuracoes {
+    background-color: #111111;
+    display: flex;
+    width: 85%;
+    height: 100%;
+}
+
+.fechar-config {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(38, 46, 46, 0.5);
+    width: 15%;
+    height: 100%;
+}
+
+.fechar-config:hover {
+    background-color: rgba(38, 46, 46, 0.3);
+}
+
+#close-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 20pt;
+    color: #7b7f83;
+    cursor: pointer;
+}
+
+.fechar-config:hover #close-btn {
+    color: #34322f;
+}
+
+.visible {
+    opacity: 1;
+    z-index: 1;
+}
+
+.config-container2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px 25px 0px;
+}
+
+.valorant-logo-config {
+    width: 50px;
+}
+
+.config2-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nome-clarinho {
+    margin-top: -20px;
+    color: #4c565e;
+    text-transform: uppercase;
+    font-size: 7pt;
+    cursor: pointer;
+}
+
+.nome-clarinho:hover {
+    color: #ffffff;
+}
+
+.nome-versao {
+    color: #313330;
+    font-size: 9pt;
+    cursor: pointer;
+}
+
+.nome-versao:hover {
+    color: #808080;
+}
+
+.config-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.config-container h2 {
+    color: #e0d6de;
+    font-family: Helvetica, sans-serif;
+    font-size: 18pt;
+    margin: 25px 25px 50px 0px;
+}
+
+.select {
+    margin: 10px 0px 10px 0px;
+    
+}
+
+.sub-titulo {
+    font-size: 8pt;
+    font-family: 'Archivo Black', sans-serif;
+    color: #cbcbcb;
+}
+
+.select-box {
+    background-color: #323232;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 15px;
+    align-items: center;
+    border-radius: 5px;
+    color: #cbcbcb;
+    cursor: pointer;
+}
+
+.select-open {
+    background-color: white;
+    color: black;
+}
+
+.select-box .option {
+    font-family: Helvetica, sans-serif;
+    font-size: 14pt;
+}
+
+.options-list {
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    margin-top: -7px;
+    display: none;
+    border-radius: 5px;
+}
+
+.options-list .option-element {
+    font-family: Helvetica, sans-serif;
+    margin-left: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.lang-lista {
+    margin-top: 100px;
+}
+
+.opened {
+    display: block;
+}
+
+
+
+/*========== JOGAR ==========*/
+
+.jogar {
+    width: 88.4%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.letsplay {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+/* BY LUIZ GOMES*/
