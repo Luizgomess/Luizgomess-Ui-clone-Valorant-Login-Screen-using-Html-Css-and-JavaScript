@@ -246,7 +246,7 @@ section {
 .valorant-image {
     min-width: 70%;
     height: 100%;
-    background-image: url("image/valorantLogin.jpg");
+    background-image: url("../image/valorantLogin.jpg");
     background-size: 100% 130%;
     background-repeat: no-repeat;
     display: flex;
