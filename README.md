@@ -1,6 +1,6 @@
 # Ui-clone-Valorant-Login-Screen-using-Html-Css-and-JavaScript
 
-<h3>maked using Html, Css and Vanilla JavaScript, for see this project whitout the git clone click <a href="https://luizgomess.github.io/Luizgomess-Ui-clone-Valorant-Login-Screen-using-Html-Css-and-JavaScript/" target="blank_">here!</a></h3>
+<h3>created using Html, Css and Vanilla JavaScript, for see this project whitout the git clone click <a href="https://luizgomess.github.io/Luizgomess-Ui-clone-Valorant-Login-Screen-using-Html-Css-and-JavaScript/" target="blank_">here!</a></h3>
 
 ![Screenshot_362](https://user-images.githubusercontent.com/62315802/97771822-8ab53680-1b1f-11eb-8f5e-868e2258fdcc.png)
 
